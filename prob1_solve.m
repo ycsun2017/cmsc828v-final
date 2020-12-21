@@ -14,6 +14,10 @@ A = 1/6*[sum(x.^2), sum(x); -sum(x), 6]
 s
 ss = 2/(s(1)+s(2))
 
+
+[ga1,gb1] = gf(1,0);
+stepflat = (3*pi/10) / (3*pi/10*ga1 - gb1)
+
 function [a,b] = solvef(i)
     x = i:5;
     x = x.*pi./10;
